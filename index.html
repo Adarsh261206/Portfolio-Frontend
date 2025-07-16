@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Sharma | Developer</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">A</div>
+                Adarsh Sharma
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="wave-animation"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="name">Adarsh</span></h1>
+                <p>I develop modern, user-friendly interfaces and web applications that deliver exceptional digital experiences.</p>
+                <div class="cta-buttons">
+                    <a href="#work" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-3d">
+                <div class="floating-laptop">
+                    <div class="laptop-screen">
+                        <div class="code-lines">
+                            <div class="code-line">const developer = {</div>
+                            <div class="code-line">  name: 'Adarsh Sharma',</div>
+                            <div class="code-line">  skills: ['HTML', 'CSS', 'Three.js'],</div>
+                            <div class="code-line">  passion: 'Creating amazing experiences'</div>
+                            <div class="code-line">};</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-icon">⚛️</div>
+                    <div class="floating-icon">🚀</div>
+                    <div class="floating-icon">💻</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">
+                I'm a passionate developer who specializes in creating immersive digital experiences. 
+                With expertise in modern web technologies and 3D graphics, I bring ideas to life through code.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive, interactive user interfaces with React, Vue.js, and modern CSS frameworks.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Backend Development</h3>
+                    <p>Building scalable server-side applications with Node.js, Python, and cloud technologies.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>3D Web Graphics</h3>
+                    <p>Developing immersive 3D experiences using Three.js, WebGL, and interactive animations.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>UI/UX Designer</h3>
+                    <p>Creating user-friendly and visually appealing interfaces for web and mobile applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+                Here are some of my recent projects that showcase my skills and creativity.
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>AI Lung Cancer Detection</h3>
+                    <p>An advanced deep learning-powered web app that analyzes CT scans for early-stage lung cancer with 70.8% accuracy. Includes interactive 3D visualization, risk profiling, and real-time scan analysis.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>3D Portfolio Website</h3>
+                    <p>An interactive portfolio featuring advanced 3D animations, particle systems, and smooth scroll interactions.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Food Delivery Website</h3>
+                    <p>A dynamic food ordering platform with a sleek UI, real-time order tracking, responsive design, and seamless restaurant menu management. Built for speed, convenience, and scalability.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Express.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">
+                Ready to bring your ideas to life? Let's discuss your project and create something amazing.
+            </p>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
