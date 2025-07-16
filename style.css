@@ -434,7 +434,7 @@ body, .hero-text, .section, .container, .project-card, .skill-card, .section-tit
 }
 
 .contact-section {
-    background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(10, 10, 10, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(146, 51, 234, 0) 0%, rgba(10, 10, 10, 0.9) 100%);
 }
 
 .contact-form {
@@ -527,6 +527,55 @@ body, .hero-text, .section, .container, .project-card, .skill-card, .section-tit
     transition: transform 0.08s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.08s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
+.social-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 29px 0;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
+
+.tech-stack-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.tech-stack-logos img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(147, 51, 234, 0.10));
+  transition: transform 0.18s, filter 0.18s;
+  background: none;
+  border-radius: 12px;
+}
+
+.tech-stack-logos img[alt="GitHub"] {
+  background: #fff;
+  border: 2px solid #c084fc;
+  padding: 8px;
+}
+
+.tech-stack-logos img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 4px 16px rgba(147, 51, 234, 0.25));
+}
+
 @media (max-width: 768px) {
     .hero-content {
         grid-template-columns: 1fr;
@@ -554,5 +603,13 @@ body, .hero-text, .section, .container, .project-card, .skill-card, .section-tit
     .floating-laptop {
         width: 300px;
         height: 200px;
+    }
+    /* Fix for header overlap on mobile */
+    .navbar {
+        height: 70px;
+        padding: 0 0;
+    }
+    .hero {
+        padding-top: 70px;
     }
 }
