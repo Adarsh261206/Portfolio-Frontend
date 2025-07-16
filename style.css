@@ -703,10 +703,3 @@ body, .hero-text, .section, .container, .project-card, .skill-card, .section-tit
     border-width: 2px;
   }
 }
-
-@media (max-width: 768px) {
-  .floating-icon:nth-child(2),
-  .floating-icon:nth-child(3) {
-    display: none;
-  }
-}
